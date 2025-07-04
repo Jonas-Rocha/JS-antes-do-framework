@@ -38,6 +38,15 @@ class Student {
 
 let student = new Student();
 
-//student.point = 10;  assim daria erro por causa do "use sctrict"
+// Tenta mudar uma propriedade somente leitura.
+//student.point = 10;  assim, sem os parenteses () daria erro por causa do "use sctrict"
 
+console.log(student.point);
 
+// Tenta deletar uma propriedade de um objeto que não deletar.
+// delete window.document;
+
+// Quando passamos parâmetros duplicados.
+function sum(a, a, c) {
+  return a + a + c;
+}
